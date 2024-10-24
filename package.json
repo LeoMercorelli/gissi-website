@@ -1,0 +1,20 @@
+{
+  "name": "pagina-gissi",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Buenas... Mi nombre es Leo Mercorelli...</h1>\r <h3 align=\"center\">Y esta es la segunda pre-entrega de mi proyecto final de Desarrollo Web de CoderHouse</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "magic.css": "^1.4.8"
+  }
+}

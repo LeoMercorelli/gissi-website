@@ -1,0 +1,272 @@
+@media screen and (max-width:1500px) {
+    .tachas {
+        .tachas-contenedor {
+            padding: 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 304px);
+            grid-template-rows: repeat(2, 375px);
+            gap: 90px;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .hero-hotfix {
+        @include flex(flex, column, space-evenly, center);
+
+        iframe {
+            width: 60%;
+        }
+    }
+
+    .disenos-hotfix {
+        .disenos-contenedor-hotfix {
+            grid-template-rows: repeat(2, 200px);
+
+        }
+    }
+
+
+
+
+    .preguntas-frecuentes-contenedor-hotfix {
+        .acordeon-hotfix {
+            width: 90%
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .tachas {
+        .tachas-contenedor {
+            grid-template-columns: repeat(2, 204px);
+            grid-template-rows: repeat(2, 255px);
+
+            div {
+
+                img {
+                    height: 200px;
+                    width: 200px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    width: 200px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:750px) {
+    .hero-hotfix {
+        @include flex(flex, column, space-evenly, center);
+
+        iframe {
+            height: 40%;
+            width: 70%;
+        }
+
+        div {
+            width: 90%;
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    .disenos-hotfix {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+
+        .disenos-contenedor-hotfix {
+            grid-template-rows: repeat(2, 200px);
+
+            div {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
+
+    .preguntas-frecuentes-contenedor-hotfix {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .tachas {
+        .tachas-contenedor {
+            grid-template-columns: repeat(2, 153px);
+            grid-template-rows: repeat(2, 185px);
+
+            div {
+
+                img {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                h3 {
+                    font-size: 12px;
+                    padding: 10px;
+                    width: 150px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .hero-hotfix {
+
+        div {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .disenos-hotfix {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .disenos-contenedor-hotfix {
+            grid-template-rows: repeat(2, 100px);
+
+            div {
+                h3 {
+                    padding-right: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .tachas {
+        .tachas-contenedor {
+            padding: 50px;
+            grid-template-columns: repeat(2, 103px);
+            grid-template-rows: repeat(2, 125px);
+
+            div {
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h3 {
+                    font-size: 10px;
+                    padding: 5px;
+                    width: 100px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+
+    .preguntas-frecuentes-contenedor-hotfix {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        padding: 10px;
+        padding-bottom: 50px;
+
+        .acordeon-hotfix {
+            width: 100%
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+
+    .disenos-hotfix {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .tachas {
+        .tachas-contenedor {
+            @include flex(flex, column, space-around, center);
+
+            div {
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h3 {
+                    font-size: 10px;
+                    padding: 5px;
+                    width: 100px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-hotfix {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}

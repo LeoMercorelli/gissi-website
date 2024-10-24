@@ -1,0 +1,79 @@
+@media screen and (max-width:900px) {
+
+    .whatsapp {
+        right: 20px;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1250px) {
+
+    footer {
+        .footer-contenedor {
+            height: 30vh;
+            @include flex(flex, row, center, center);
+
+            .info-footer {
+                visibility: hidden;
+                height: 5%;
+            }
+
+
+            .logos-footer {
+                a {
+
+                    .logopie {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                div {
+                    a {
+                        .facebook {
+                            margin: 10px;
+                            height: 3vh;
+                            width: 3vh;
+                        }
+
+                        .instagram {
+                            margin: 10px;
+                            height: 3vh;
+                            width: 3vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        .footer-contenedor {
+            height: 30vh;
+
+            .nav-footer {
+                display: none;
+            }
+
+            .info-footer {
+                display: none;
+            }
+        }
+
+
+        .logos-footer {
+            .logopie {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}

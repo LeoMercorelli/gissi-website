@@ -1,0 +1,53 @@
+header {
+    background-color: white;
+
+    a {
+        height: 28vh;
+        @include flex(flex, row, center, center);
+
+        img {
+            height: 150px;
+            width: 150px;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .label-hamburguesa {
+        display: none;
+    }
+
+    nav {
+        .menu-hamburguesa {
+            display: none;
+        }
+
+        ul {
+            height: 7vh;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            @include flex(flex, row, space-evenly, center);
+
+            li {
+                a {
+                    font-family: "Playwrite GB S", cursive;
+                    height: 40px;
+                    color: #684700;
+                    font-size: 23px;
+                    text-decoration: none;
+                    transition: 1s;
+
+                    &:hover {
+                        padding: 20px;
+                        transform: scale(1.1);
+                        background-color: rgba(0, 0, 0, 0.288);
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

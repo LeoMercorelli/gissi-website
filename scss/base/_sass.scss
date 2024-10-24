@@ -1,0 +1,43 @@
+//!*--  VARIABLES  --//
+$tema-bordado: #FEE7C8;
+$tema-laser: #F1E5E7;
+$tema-hotfix: #E2F1E9;
+$tema-contacto: #BFF0B0;
+
+
+
+
+//!*--  LISTAS  --//
+$colores: black, #412700, white;
+
+
+
+
+//!*--  MAPAS  --//
+$acordeon-pf: (
+    pf-width: 60%,
+    pf-margin-top: 70px,
+);
+
+
+
+
+//!*--  EXTENDS  --//
+%titulo {
+    font-family: "Pacifico", cursive;
+    color: #000000;
+    padding: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+//!*--  MIXIN  --//
+
+@mixin flex ($flex, $direction, $justify, $align) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,178 @@
+@media screen and (max-width:1000px) {
+    .hero-laser {
+        @include flex(flex, column-reverse, space-evenly, center);
+
+        iframe {
+            height: 40%;
+            width: 70%;
+        }
+
+        div {
+            width: 90%;
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    .disenos-laser {
+        .disenos-contenedor-laser {
+            grid-template-rows: repeat(2, 200px);
+        }
+    }
+
+    .telas {
+        .telas-contenedor {
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-laser {
+        .acordeon-laser {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .disenos-laser {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+
+        .disenos-contenedor-laser {
+            grid-template-rows: repeat(2, 200px);
+
+            div {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
+    .telas {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+
+        .telas-contenedor {
+            padding: 25px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-laser {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .hero-laser {
+
+        div {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    .disenos-laser {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .disenos-contenedor-laser {
+            grid-template-rows: repeat(2, 100px);
+
+            div {
+                h3 {
+                    padding-right: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .telas {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .telas-contenedor {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-laser {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        padding: 10px;
+        padding-bottom: 50px;
+
+        .acordeon-laser {
+            width: 100%
+        }
+    }
+}
+
+
+@media screen and (max-width:400px) {
+
+    .disenos-laser {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .telas {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .telas-contenedor {
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-laser {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,208 @@
+@media screen and (max-width:1250px) {
+
+    .hero {
+        height: 60vh;
+
+        h1 {
+            font-size: 29px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .servicios {
+        .servicios-contenedor {
+            height: 60vh;
+            @include flex(flex, row, center, center);
+        }
+    }
+
+    .sobre-nosotros {
+        .telas-index {
+            div {
+                width: 90%;
+            }
+        }
+
+        .hilos-index {
+            div {
+                width: 90%;
+            }
+        }
+
+        .lentejuelas-index {
+            div {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .hero {
+        height: 75vh;
+
+        h1 {
+            font-size: 22px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .servicios {
+        .servicios-contenedor {
+            height: 40vh;
+            @include flex(flex, row, center, center);
+        }
+    }
+
+
+    .sobre-nosotros {
+        .telas-index {
+            @include flex(flex, row, center, center);
+
+            div {
+                height: auto;
+                width: 90%;
+                padding: 20px;
+                margin-top: 0px;
+                @include flex(flex, column, space-between, center);
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border: solid 1px black;
+                }
+
+                p {
+                    margin: 0px;
+                    padding: 0px;
+                    padding-top: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .hilos-index {
+            @include flex(flex, row, center, center);
+
+            div {
+                height: auto;
+                width: 90%;
+                padding: 20px;
+                margin-top: 50px;
+                @include flex(flex, column-reverse, space-between, center);
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border: solid 1px black;
+                }
+
+                p {
+                    margin: 0px;
+                    padding: 0px;
+                    padding-top: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .lentejuelas-index {
+            @include flex(flex, row, center, center);
+
+            div {
+                height: auto;
+                width: 90%;
+                padding: 20px;
+                margin-top: 0px;
+                @include flex(flex, column, space-between, center);
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border: solid 1px black;
+                }
+
+                p {
+                    margin: 0px;
+                    padding: 0px;
+                    padding-top: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .hero {
+        height: 60vh;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+    }
+
+    .servicios {
+        .servicios-contenedor {
+            height: 30vh;
+            @include flex(flex, row, center, center);
+
+            div {
+
+                button {
+                    width: 50%;
+
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sobre-nosotros {
+        .telas-index {
+            div {
+                width: 90%;
+            }
+        }
+
+        .hilos-index {
+            div {
+                width: 90%;
+            }
+        }
+
+        .lentejuelas-index {
+            div {
+                width: 90%;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+footer {
+    font-family: "Oswald", sans-serif;
+    background-image: url(../img/fondos/fondo-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .footer-contenedor {
+        height: 40vh;
+        @include flex(flex, row, space-between, center);
+
+        .nav-footer {
+            width: 400px;
+            margin-left: 50px;
+
+            ul {
+                @include flex(flex, column, start, start);
+
+                li {
+                    a {
+                        color: black;
+                        font-size: 25px;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .logos-footer {
+            width: 400px;
+            @include flex(flex, column, space-around, center);
+
+            a {
+                .logopie {
+                    height: 200px;
+                    width: 200px;
+                    display: inline-block;
+                    transition: 1s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            div {
+                a {
+                    .facebook {
+                        margin: 15px;
+                        height: 5vh;
+                        width: 5vh;
+                        display: inline-block;
+                        transition: 1s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    .instagram {
+                        margin: 15px;
+                        height: 5vh;
+                        width: 5vh;
+                        display: inline-block;
+                        transition: 1s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .info-footer {
+            margin-right: 50px;
+
+            div {
+                h3 {
+                    font-size: 20px;
+                    margin-top: 15px;
+                }
+
+                p {
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+        }
+
+    }
+}

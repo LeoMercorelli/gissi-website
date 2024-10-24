@@ -1,0 +1,98 @@
+.hero-contacto {
+    height: 40vh;
+    background-color: $tema-contacto;
+    @include flex(flex, column, space-evenly, center);
+
+    h1 {
+        @extend %titulo;
+    }
+
+    p {
+        font-family: "Playwrite GB S", cursive;
+        font-size: 20px;
+        text-align: center;
+        width: 600px;
+    }
+}
+
+.formulario {
+    font-family: "Oswald", sans-serif;
+    height: 60vh;
+    @include flex(flex, column, center, center);
+
+    div {
+        margin-bottom: 30px;
+    }
+
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        background-color: $tema-contacto;
+        color: white;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.43);
+        -webkit-box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.43);
+        -moz-box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.43);
+
+        &:hover {
+            color: black
+        }
+    }
+}
+
+
+.info-contacto-contenedor {
+    font-family: "Oswald", sans-serif;
+    @include flex(flex, row, space-evenly, start);
+    text-align: center;
+    background-color: $tema-contacto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    animation-name: entrada-info-contacto;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-direction: initial;
+
+    @keyframes entrada-info-contacto {
+        from {
+            margin-left: 100%;
+            width: 500%;
+        }
+
+        to {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    .ld-info-contacto {
+        background-color: black;
+        height: 200px;
+        width: 1px;
+    }
+
+    div {
+        width: 320px;
+
+        h2 {
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+.mapa-contacto-contenedor {
+    height: 70vh;
+    @include flex(flex, row, center, center);
+}

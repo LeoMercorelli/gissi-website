@@ -1,0 +1,199 @@
+@media screen and (max-width:1000px) {
+
+
+    .disenos-bordado {
+        .disenos-contenedor-bordado {
+            grid-template-rows: repeat(2, 200px);
+
+        }
+    }
+
+    .personalizacion {
+        .personalizacion-contenedor {
+            div {
+                @include flex(flex, column, center, center);
+
+                img {
+                    transform: scale(0.7);
+                }
+
+                a {
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
+
+
+    .preguntas-frecuentes-contenedor-bordado {
+        .acordeon-bordado {
+            width: 90%
+        }
+    }
+}
+
+
+
+@media screen and (max-width:750px) {
+    .hero-bordado {
+        @include flex(flex, column, space-evenly, center);
+
+        iframe {
+            height: 40%;
+            width: 70%;
+        }
+
+        div {
+            width: 90%;
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    .disenos-bordado {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+
+        .disenos-contenedor-bordado {
+            grid-template-rows: repeat(2, 200px);
+
+            div {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
+    .personalizacion {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+
+        .personalizacion-contenedor {
+            height: 90vh;
+            @include flex(flex, column, space-around, center);
+
+            div {
+                width: 70%;
+
+                img {
+                    transform: scale(0.4);
+                    position: absolute;
+                    bottom: 30px;
+                }
+
+                a {
+                    transform: scale(0.4);
+                }
+            }
+        }
+
+        .pag-next {
+            display: none;
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-laser {
+        h2 {
+            padding: 25px;
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-bordado {
+
+        div {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .disenos-bordado {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .disenos-contenedor-bordado {
+            grid-template-rows: repeat(2, 100px);
+
+            div {
+                h3 {
+                    padding-right: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .personalizacion {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .personalizacion-contenedor {
+            div {
+                width: 90%;
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-bordado {
+        h2 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        padding: 10px;
+        padding-bottom: 50px;
+
+        .acordeon-bordado {
+            width: 100%
+        }
+    }
+}
+
+
+@media screen and (max-width:400px) {
+
+    .disenos-bordado {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .personalizacion {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .personalizacion-contenedor {
+            div {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .preguntas-frecuentes-contenedor-bordado {
+        h2 {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}
