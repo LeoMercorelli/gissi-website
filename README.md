@@ -1,5 +1,5 @@
 <h1 align="center">Buenas... Mi nombre es Leo Mercorelli...</h1>
-<h3 align="center">Y esta es la segunda pre-entrega de mi proyecto final de Desarrollo Web de CoderHouse</h3>
+<h3 align="center">Y esta es la tercera pre-entrega de mi proyecto final de Desarrollo Web de CoderHouse</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
