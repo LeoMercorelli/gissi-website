@@ -1,28 +1,32 @@
 footer {
     font-family: "Oswald", sans-serif;
-    background-image: url(../img/fondos/fondo-footer.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: nth($colores, 3);
 
     .footer-contenedor {
-        height: 40vh;
+        height: auto;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+
         @include flex(flex, row, space-between, center);
 
         .nav-footer {
+
             width: 400px;
             margin-left: 50px;
 
             ul {
+
                 @include flex(flex, column, start, start);
 
                 li {
+
                     a {
-                        color: black;
+
+                        color: nth($colores, 1);
                         font-size: 25px;
 
                         &:hover {
-                            color: white;
+                            color: nth($colores, 3);
                         }
                     }
                 }
@@ -79,10 +83,12 @@ footer {
         .info-footer {
             margin-right: 50px;
 
+
             div {
                 h3 {
                     font-size: 20px;
                     margin-top: 15px;
+                    text-decoration: underline;
                 }
 
                 p {
@@ -93,4 +99,14 @@ footer {
         }
 
     }
+}
+
+
+
+.footer-contacto {
+    background-image: url("../img/fondos/wave-footer-contacto.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
 }

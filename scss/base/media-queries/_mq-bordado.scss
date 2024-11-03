@@ -1,10 +1,27 @@
 @media screen and (max-width:1000px) {
 
+    .unir-fondos-bordado {
+        .hero-bordado {
 
-    .disenos-bordado {
-        .disenos-contenedor-bordado {
-            grid-template-rows: repeat(2, 200px);
 
+            div {
+
+                h1 {
+
+                    p {
+                        line-height: 40px;
+                        font-size: 18px;
+
+                    }
+                }
+            }
+        }
+
+        .disenos-bordado {
+            .disenos-contenedor-bordado {
+                grid-template-rows: repeat(2, 200px);
+
+            }
         }
     }
 
@@ -34,40 +51,47 @@
 
 
 
+
+
 @media screen and (max-width:750px) {
-    .hero-bordado {
-        @include flex(flex, column, space-evenly, center);
+    .unir-fondos-bordado {
+        .hero-bordado {
+            @include flex(flex, column, space-evenly, center);
 
-        iframe {
-            height: 40%;
-            width: 70%;
-        }
-
-        div {
-            width: 90%;
-
-            p {
-                font-size: 16px;
-                text-align: center;
+            iframe {
+                height: 40%;
+                width: 70%;
             }
-        }
-    }
-
-    .disenos-bordado {
-        h2 {
-            padding: 25px;
-            font-size: 30px;
-        }
-
-        .disenos-contenedor-bordado {
-            grid-template-rows: repeat(2, 200px);
 
             div {
-                h3 {
-                    font-size: 16px;
+                width: 90%;
+
+                h1 {
+
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                    }
                 }
             }
+        }
 
+        .disenos-bordado {
+            h2 {
+                padding: 25px;
+                font-size: 30px;
+            }
+
+            .disenos-contenedor-bordado {
+                grid-template-rows: repeat(2, 200px);
+
+                div {
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
+            }
         }
     }
 
@@ -109,29 +133,39 @@
     }
 }
 
+
+
+
+
 @media screen and (max-width:600px) {
-    .hero-bordado {
+    .unir-fondos-bordado {
 
-        div {
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-
-    .disenos-bordado {
-        h2 {
-            padding: 20px;
-            font-size: 24px;
-        }
-
-        .disenos-contenedor-bordado {
-            grid-template-rows: repeat(2, 100px);
+        .hero-bordado {
 
             div {
-                h3 {
-                    padding-right: 10px;
-                    font-size: 10px;
+                h1 {
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .disenos-bordado {
+            h2 {
+                padding: 20px;
+                font-size: 24px;
+            }
+
+            .disenos-contenedor-bordado {
+                grid-template-rows: repeat(2, 100px);
+
+                div {
+                    h3 {
+                        padding-right: 10px;
+                        font-size: 10px;
+                    }
                 }
             }
         }
@@ -166,12 +200,16 @@
 }
 
 
-@media screen and (max-width:400px) {
 
-    .disenos-bordado {
-        h2 {
-            padding: 10px;
-            font-size: 18px;
+
+
+@media screen and (max-width:400px) {
+    .unir-fondos-bordado {
+        .disenos-bordado {
+            h2 {
+                padding: 10px;
+                font-size: 18px;
+            }
         }
     }
 

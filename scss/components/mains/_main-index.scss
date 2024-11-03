@@ -1,166 +1,231 @@
-.hero{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero.png");
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-index.jpg");
     background-repeat: no-repeat;
-    background-position:top 300%;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
     height: 69vh;
     @include flex(flex, column, space-evenly, center);
-        h1{
+
+    p {
         font-family: "Playwrite GB S", cursive;
         font-size: 37px;
-        color:beige;
-        z-index: 0;
+        color: nth($colores, 4);
     }
-    a{
-        font-family: "Oswald", sans-serif;
-        text-decoration: none;
-        background-color: rgba(245, 245, 220, 0.6);
-        color: nth($colores, 1);
-        font-size: 23px;
-        width: auto;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 25px;
-        &:hover{
-            background-color: beige;
+
+    h1 {
+        a {
+            font-family: "Oswald", sans-serif;
+            text-decoration: none;
+            background-color: rgba(245, 245, 220, 0.6);
+            color: nth($colores, 1);
+            font-size: 23px;
+            width: auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 25px;
+            transition: 1s;
+
+            &:hover {
+                background-color: nth($colores, 4);
+            }
         }
     }
 }
 
-.servicios{
+.servicios {
     border-top: black solid 3px;
     border-bottom: black solid 3px;
-    .servicios-contenedor{
-        height: 110vh;
+    background-image: url("../img/fondos/fondo-servicios.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    h2 {
+        @extend %titulo
+    }
+
+    .servicios-contenedor {
+        height: 100vh;
         @include flex(flex, row, center, center);
-        background-color: beige;
-        div{
+        ;
+
+        div {
             width: 30%;
             height: 70%;
             margin: 3%;
             @include flex(flex, row, center, center);
-            transition: 1s;
-            &:hover{
-                transform: scale(1.2);
-            }
-            button{
+
+
+            button {
                 width: 90px;
-                a{
+
+                a {
                     font-family: "Oswald", sans-serif;
                     text-decoration: none;
                     color: nth($colores, 3);
                 }
             }
         }
-        .bordados-tarjeta{
-            background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-bordado.jpg);
+
+        .bordados-tarjeta {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-bordado.jpg);
             background-repeat: no-repeat;
-            background-position:center;
+            background-position: center;
             background-size: cover;
-        }
-        .laser-tarjeta{
-            background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-laser.jpg);
-            background-repeat: no-repeat;
-            background-position:center;
-            background-size: cover;
-        }
-            .hotfix-tarjeta{
-                background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-hotfix.jpg);
-                background-repeat: no-repeat;
-                background-position:center;
-                background-size: cover;
+            transition: 2s;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tarjetas/servicios/icono-bordado.jpg);
+
+                transform: scale(1.2);
+                box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+                -webkit-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+                -moz-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
             }
+        }
+
+        .laser-tarjeta {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-laser.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: 2s;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tarjetas/servicios/icono-laser.jpg);
+
+                transform: scale(1.2);
+                box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+                -webkit-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+                -moz-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+            }
+        }
+
+        .hotfix-tarjeta {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-hotfix.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: 2s;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tarjetas/servicios/icono-hotfix.jpg);
+
+                transform: scale(1.2);
+                box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+                -webkit-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+                -moz-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+            }
+        }
     }
 }
 
-.sobre-nosotros{
+.sobre-nosotros {
     font-family: "Playwrite GB S", cursive;
-    background-image: url(../img/fondos/fondo-servicios.png);
+    background-image: url(../img/fondos/fondo-sobre-nosotros.jpg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 
     height: auto;
     padding: 50px;
-    h2{
-    @extend %titulo
+
+    h2 {
+        @extend %titulo
     }
-    .telas-index{
-        div{
-        height: 300px;
-        width: 70%;
-        padding: 50px;
-        margin-top: 70px;
-        @include flex(flex, row, center, center);
-        background-color: rgba(255, 119, 28, 0.8);
-            img{
+
+    .telas-index {
+        div {
+            height: 300px;
+            width: 70%;
+            padding: 50px;
+            margin-top: 70px;
+            @include flex(flex, row, center, center);
+            backdrop-filter: blur(2px);
+            border-radius: 100px;
+
+
+            img {
                 width: 200px;
                 height: 200px;
+                border: solid #e06500 3px;
                 border-radius: 20%;
             }
-        
-            p{
-            
-            width: 80%;
-            font-size: 20px;
-            padding: 30px;
-            color: hwb(12 0% 18%);
-            text-align: left;
+
+            p {
+                font-weight: 900;
+                width: 80%;
+                font-size: 20px;
+                padding: 30px;
+                color: nth($colores, 4);
+                text-align: left;
+                text-shadow: -1px -1px 9px rgba(0, 0, 0, 1);
             }
         }
     }
 
-    .hilos-index{
+    .hilos-index {
         @include flex(flex, row, flex-end, center);
-        div{
-        height: 300px;
-        width: 70%;
-        padding: 50px;
-        margin-bottom: 70px;
-        margin-top: 70px;
-        @include flex(flex, row, flex-end, center);
-        background-color: rgba(123, 0, 224, 0.8);
-            img{
+
+        div {
+            height: 300px;
+            width: 70%;
+            padding: 50px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            @include flex(flex, row, flex-end, center);
+            backdrop-filter: blur(2px);
+            border-radius: 100px;
+
+            img {
                 width: 200px;
                 height: 200px;
+                border: solid hsl(266, 100%, 27%) 3px;
                 border-radius: 20%;
             }
-        
-            p{
-            width: 80%;
-            font-size: 20px;
-            padding: 30px;
-            color: #f15bff;
-            text-align: left;
+
+            p {
+
+                font-weight: 900;
+                width: 80%;
+                font-size: 20px;
+                padding: 30px;
+                color: nth($colores, 4);
+                text-align: left;
+                text-shadow: -1px -1px 9px rgba(0, 0, 0, 1);
             }
         }
     }
 
-    .lentejuelas-index{
-            div{
+    .lentejuelas-index {
+        div {
             height: 300px;
             width: 70%;
             padding: 50px;
             @include flex(flex, row, center, center);
-            background-color: #00880bcc;
-                img{
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 20%;
-                }
-            
-                p{
+            backdrop-filter: blur(2px);
+            border-radius: 100px;
+
+            img {
+                width: 200px;
+                height: 200px;
+                border: solid hsl(125, 100%, 17%) 3px;
+                border-radius: 20%;
+            }
+
+            p {
+
+                font-weight: 900;
                 width: 80%;
                 font-size: 20px;
                 padding: 30px;
-                color: hwb(120 44% 0%);
+                color: nth($colores, 4);
                 text-align: left;
-                }
+                text-shadow: -1px -1px 9px rgba(0, 0, 0, 1);
             }
         }
     }
-
-
+}

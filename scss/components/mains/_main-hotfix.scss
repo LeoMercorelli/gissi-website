@@ -1,90 +1,104 @@
-.hero-hotfix {
-    height: 65vh;
-    background-color: #E2F1E9;
-    @include flex(flex, column, space-evenly, center);
-
-    iframe {
-        width: 40%;
-    }
-
-    div {
-        width: 70%;
-
-        p {
-            font-family: "Playwrite GB S", cursive;
-            font-size: 20px;
-            text-align: center;
-        }
-    }
-}
-
-
-.disenos-hotfix {
-    height: auto;
+.unir-fondos-hotfix {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-hotfix.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    background-color: hsla(0, 0%, 0%, 0.4);
-    @include flex(flex, column, space-between, center);
 
-    h2 {
-        @extend %titulo;
-    }
+    .hero-hotfix {
+        height: 65vh;
+        @include flex(flex, column, space-evenly, center);
 
-    .disenos-contenedor-hotfix {
-        width: 98%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 350px);
-        gap: 15px;
-        margin-bottom: 70px;
-
-        .tarj-1h {
-            grid-row: span 2;
-        }
-
-        .tarj-3h {
-            grid-column: span 2;
+        iframe {
+            width: 40%;
         }
 
         div {
-            position: relative;
-            transition: 1s;
+            width: 70%;
 
-            &:hover {
-                transform: scale(1.03);
-                h3{
-                    display: none;
+            h1 {
+
+                p {
+                    font-family: "Playwrite GB S", cursive;
+                    color: nth($colores, 4);
+                    font-size: 20px;
+                    line-height: 60px
                 }
             }
+        }
+    }
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+
+    .disenos-hotfix {
+        height: auto;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        border-top: nth($colores, 4) 30px solid;
+        border-style: double;
+        @include flex(flex, column, space-between, center);
+
+        h2 {
+            @extend %titulo;
+        }
+
+        .disenos-contenedor-hotfix {
+            width: 98%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 350px);
+            gap: 15px;
+            margin-bottom: 70px;
+
+            .tarj-1h {
+                grid-row: span 2;
             }
 
-            h3 {
-                font-family: "Playwrite GB S", cursive;
-                color: nth($colores, 2);
-                position: absolute;
-                bottom: 0px;
-                background-color: rgba(245, 245, 220, 0.8);
-                width: 100%;
-                text-align: end;
-                margin: 0px;
-                padding-right: 20px;
+            .tarj-3h {
+                grid-column: span 2;
+            }
+
+            div {
+                position: relative;
+                transition: 1s;
+
+                &:hover {
+                    transform: scale(1.03);
+
+                    h3 {
+                        display: none;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-family: "Playwrite GB S", cursive;
+                    color: nth($colores, 2);
+                    position: absolute;
+                    bottom: 0px;
+                    background-color: rgba(245, 245, 220, 0.8);
+                    width: 100%;
+                    text-align: end;
+                    margin: 0px;
+                    padding-right: 20px;
+                }
             }
         }
     }
 }
 
-
 .tachas {
     height: auto;
-    background-color: #E2F1E9;
+    background-color: white;
     border-top: black solid 3px;
     border-bottom: black solid 3px;
 
-    h1 {
+    h2 {
         @extend %titulo;
     }
 
@@ -122,7 +136,7 @@
     font-family: "Oswald", sans-serif;
     height: auto;
     padding: 50px;
-    background-color: #FEE7C8;
+    background-color: #E2F1E9;
     @include flex(flex, column, center, center);
 
 
@@ -131,6 +145,7 @@
     }
 
     .acordeon-hotfix {
+        z-index: 1;
         margin-top: map-get($acordeon-pf, pf-margin-top);
         width: map-get($acordeon-pf, pf-width);
     }

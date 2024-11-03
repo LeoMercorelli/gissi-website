@@ -95,4 +95,8 @@
 .mapa-contacto-contenedor {
     height: 70vh;
     @include flex(flex, row, center, center);
+
+    iframe {
+        z-index: 1;
+    }
 }

@@ -1,22 +1,7 @@
-@media screen and (max-width:900px) {
-
-    .whatsapp {
-        right: 20px;
-
-        img {
-            height: 50px;
-            width: 50px;
-        }
-    }
-}
-
-
-
 @media screen and (max-width:1250px) {
 
     footer {
         .footer-contenedor {
-            height: 30vh;
             @include flex(flex, row, center, center);
 
             .info-footer {
@@ -52,12 +37,35 @@
             }
         }
     }
+
+    .footer-contacto {
+        background-image: url(../img/fondos/fondo-footer-contacto.png);
+    }
 }
+
+
+
+
+
+@media screen and (max-width:900px) {
+
+    .whatsapp {
+        right: 20px;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+
+
+
 
 @media screen and (max-width:700px) {
     footer {
         .footer-contenedor {
-            height: 30vh;
 
             .nav-footer {
                 display: none;

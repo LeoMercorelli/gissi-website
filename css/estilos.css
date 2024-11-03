@@ -2,12 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
-.sobre-nosotros h2, .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .disenos-hotfix h2, .tachas h1, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+.servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
   font-family: "Pacifico", cursive;
-  color: #000000;
+  color: beige;
   padding: 30px;
   font-size: 35px;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 0px 0px 10px black; }
+
+@media screen and (max-width: 1000px) {
+  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+    padding: 20px;
+    font-size: 28px; } }
+
+@media screen and (max-width: 500px) {
+  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+    padding: 10px;
+    font-size: 25px; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none; }
@@ -16,6 +32,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .whatsapp {
+  z-index: 3;
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -34,6 +51,14 @@ body {
     transform: scale(0.9); }
   to {
     transform: scale(1.2); } }
+
+.wave-footer {
+  width: 100%;
+  background: white;
+  position: relative;
+  top: 0; }
+  .wave-footer svg path {
+    height: auto; }
 
 header {
   background-color: white; }
@@ -77,12 +102,11 @@ header {
 
 footer {
   font-family: "Oswald", sans-serif;
-  background-image: url(../img/fondos/fondo-footer.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background-color: white; }
   footer .footer-contenedor {
-    height: 40vh;
+    height: auto;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,15 +157,22 @@ footer {
       margin-right: 50px; }
       footer .footer-contenedor .info-footer div h3 {
         font-size: 20px;
-        margin-top: 15px; }
+        margin-top: 15px;
+        text-decoration: underline; }
       footer .footer-contenedor .info-footer div p {
         padding: 0px;
         margin: 0px; }
 
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero.png");
+.footer-contacto {
+  background-image: url("../img/fondos/wave-footer-contacto.svg");
   background-repeat: no-repeat;
-  background-position: top 300%;
+  background-position: bottom;
+  background-size: cover; }
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -150,34 +181,37 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
-  .hero h1 {
+  .hero p {
     font-family: "Playwrite GB S", cursive;
     font-size: 37px;
-    color: beige;
-    z-index: 0; }
-  .hero a {
+    color: beige; }
+  .hero h1 a {
     font-family: "Oswald", sans-serif;
     text-decoration: none;
     background-color: rgba(245, 245, 220, 0.6);
     color: black;
     font-size: 23px;
     width: auto;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid black;
-    border-radius: 25px; }
-    .hero a:hover {
+    border-radius: 25px;
+    transition: 1s; }
+    .hero h1 a:hover {
       background-color: beige; }
 
 .servicios {
   border-top: black solid 3px;
-  border-bottom: black solid 3px; }
+  border-bottom: black solid 3px;
+  background-image: url("../img/fondos/fondo-servicios.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
   .servicios .servicios-contenedor {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background-color: beige; }
+    align-items: center; }
     .servicios .servicios-contenedor div {
       width: 30%;
       height: 70%;
@@ -185,10 +219,7 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center;
-      transition: 1s; }
-      .servicios .servicios-contenedor div:hover {
-        transform: scale(1.2); }
+      align-items: center; }
       .servicios .servicios-contenedor div button {
         width: 90px; }
         .servicios .servicios-contenedor div button a {
@@ -199,25 +230,45 @@ footer {
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-bordado.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover; }
+      background-size: cover;
+      transition: 2s; }
+      .servicios .servicios-contenedor .bordados-tarjeta:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tarjetas/servicios/icono-bordado.jpg);
+        transform: scale(1.2);
+        box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62); }
     .servicios .servicios-contenedor .laser-tarjeta {
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-laser.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover; }
+      background-size: cover;
+      transition: 2s; }
+      .servicios .servicios-contenedor .laser-tarjeta:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tarjetas/servicios/icono-laser.jpg);
+        transform: scale(1.2);
+        box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62); }
     .servicios .servicios-contenedor .hotfix-tarjeta {
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-hotfix.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover; }
+      background-size: cover;
+      transition: 2s; }
+      .servicios .servicios-contenedor .hotfix-tarjeta:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tarjetas/servicios/icono-hotfix.jpg);
+        transform: scale(1.2);
+        box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+        -webkit-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 13px 15px 5px 1px rgba(0, 0, 0, 0.62); }
 
 .sobre-nosotros {
   font-family: "Playwrite GB S", cursive;
-  background-image: url(../img/fondos/fondo-servicios.png);
+  background-image: url(../img/fondos/fondo-sobre-nosotros.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   height: auto;
   padding: 50px; }
   .sobre-nosotros .telas-index div {
@@ -229,17 +280,21 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 119, 28, 0.8); }
+    backdrop-filter: blur(2px);
+    border-radius: 100px; }
     .sobre-nosotros .telas-index div img {
       width: 200px;
       height: 200px;
+      border: solid #e06500 3px;
       border-radius: 20%; }
     .sobre-nosotros .telas-index div p {
+      font-weight: 900;
       width: 80%;
       font-size: 20px;
       padding: 30px;
-      color: hwb(12 0% 18%);
-      text-align: left; }
+      color: beige;
+      text-align: left;
+      text-shadow: -1px -1px 9px black; }
   .sobre-nosotros .hilos-index {
     display: flex;
     flex-direction: row;
@@ -249,23 +304,27 @@ footer {
       height: 300px;
       width: 70%;
       padding: 50px;
-      margin-bottom: 70px;
-      margin-top: 70px;
+      margin-bottom: 15px;
+      margin-top: 15px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-      background-color: rgba(123, 0, 224, 0.8); }
+      backdrop-filter: blur(2px);
+      border-radius: 100px; }
       .sobre-nosotros .hilos-index div img {
         width: 200px;
         height: 200px;
+        border: solid #3c008a 3px;
         border-radius: 20%; }
       .sobre-nosotros .hilos-index div p {
+        font-weight: 900;
         width: 80%;
         font-size: 20px;
         padding: 30px;
-        color: #f15bff;
-        text-align: left; }
+        color: beige;
+        text-align: left;
+        text-shadow: -1px -1px 9px black; }
   .sobre-nosotros .lentejuelas-index div {
     height: 300px;
     width: 70%;
@@ -274,73 +333,86 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #00880bcc; }
+    backdrop-filter: blur(2px);
+    border-radius: 100px; }
     .sobre-nosotros .lentejuelas-index div img {
       width: 200px;
       height: 200px;
+      border: solid #005707 3px;
       border-radius: 20%; }
     .sobre-nosotros .lentejuelas-index div p {
+      font-weight: 900;
       width: 80%;
       font-size: 20px;
       padding: 30px;
-      color: hwb(120 44% 0%);
-      text-align: left; }
+      color: beige;
+      text-align: left;
+      text-shadow: -1px -1px 9px black; }
 
-.hero-bordado {
-  height: 65vh;
-  background-color: #FEE7C8;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-  .hero-bordado iframe {
-    width: 40%; }
-  .hero-bordado div {
-    width: 40%; }
-    .hero-bordado div p {
-      font-family: "Playwrite GB S", cursive;
-      font-size: 20px; }
-
-.disenos-bordado {
-  height: auto;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
-  .disenos-bordado .disenos-contenedor-bordado {
-    width: 98%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 350px);
-    gap: 15px;
-    margin-bottom: 70px; }
-    .disenos-bordado .disenos-contenedor-bordado .tarj-1b {
-      grid-row: span 2; }
-    .disenos-bordado .disenos-contenedor-bordado .tarj-3b {
-      grid-column: span 2; }
-    .disenos-bordado .disenos-contenedor-bordado div {
-      position: relative;
-      transition: 1s; }
-      .disenos-bordado .disenos-contenedor-bordado div:hover {
-        transform: scale(1.03); }
-        .disenos-bordado .disenos-contenedor-bordado div:hover h3 {
-          display: none; }
-      .disenos-bordado .disenos-contenedor-bordado div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .disenos-bordado .disenos-contenedor-bordado div h3 {
+.unir-fondos-bordado {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-bordado.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center; }
+  .unir-fondos-bordado .hero-bordado {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .unir-fondos-bordado .hero-bordado iframe {
+      width: 40%; }
+    .unir-fondos-bordado .hero-bordado div {
+      width: 40%; }
+      .unir-fondos-bordado .hero-bordado div h1 p {
         font-family: "Playwrite GB S", cursive;
-        color: #412700;
-        position: absolute;
-        bottom: 0px;
-        background-color: rgba(245, 245, 220, 0.8);
-        width: 100%;
-        text-align: end;
-        margin: 0px;
-        padding-right: 20px; }
+        color: beige;
+        font-size: 20px;
+        line-height: 60px; }
+  .unir-fondos-bordado .disenos-bordado {
+    height: auto;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-top: beige 30px solid;
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado {
+      width: 98%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 350px);
+      gap: 15px;
+      margin-bottom: 70px; }
+      .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado .tarj-1b {
+        grid-row: span 2; }
+      .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado .tarj-3b {
+        grid-column: span 2; }
+      .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div {
+        position: relative;
+        transition: 1s; }
+        .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div:hover {
+          transform: scale(1.03); }
+          .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div:hover h3 {
+            display: none; }
+        .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div h3 {
+          font-family: "Playwrite GB S", cursive;
+          color: #412700;
+          position: absolute;
+          bottom: 0px;
+          background-color: rgba(245, 245, 220, 0.8);
+          width: 100%;
+          text-align: end;
+          margin: 0px;
+          padding-right: 20px; }
 
 .personalizacion {
   border-top: black solid 3px;
@@ -392,65 +464,76 @@ footer {
   justify-content: center;
   align-items: center; }
   .preguntas-frecuentes-contenedor-bordado .acordeon-bordado {
+    z-index: 1;
     margin-top: 70px;
     width: 60%; }
 
-.hero-laser {
-  height: 65vh;
-  background-color: #F1E5E7;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-  .hero-laser iframe {
-    width: 40%; }
-  .hero-laser div {
-    width: 40%; }
-    .hero-laser div p {
+.unir-fondos-laser {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-laser.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center; }
+  .unir-fondos-laser .hero-laser {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .unir-fondos-laser .hero-laser iframe {
+      width: 40%; }
+    .unir-fondos-laser .hero-laser div {
+      width: 50%;
+      color: beige;
       font-family: "Playwrite GB S", cursive;
-      font-size: 20px; }
-
-.disenos-laser {
-  height: auto;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
-  .disenos-laser .disenos-contenedor-laser {
-    font-family: "Playwrite GB S", cursive;
-    width: 98%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 350px);
-    gap: 15px;
-    margin-bottom: 70px; }
-    .disenos-laser .disenos-contenedor-laser .tarj-1l {
-      grid-row: span 2; }
-    .disenos-laser .disenos-contenedor-laser .tarj-3l {
-      grid-column: span 2; }
-    .disenos-laser .disenos-contenedor-laser div {
-      position: relative;
-      transition: 1s; }
-      .disenos-laser .disenos-contenedor-laser div:hover {
-        transform: scale(1.03); }
-        .disenos-laser .disenos-contenedor-laser div:hover h3 {
-          display: none; }
-      .disenos-laser .disenos-contenedor-laser div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .disenos-laser .disenos-contenedor-laser div h3 {
-        font-family: "Playwrite GB S", cursive;
-        color: #412700;
-        position: absolute;
-        bottom: 0px;
-        background-color: rgba(245, 245, 220, 0.8);
-        width: 100%;
-        text-align: end;
-        padding-right: 20px;
-        margin: 0px; }
+      font-size: 20px;
+      line-height: 60px; }
+      .unir-fondos-laser .hero-laser div h1 {
+        font-size: 20px; }
+  .unir-fondos-laser .disenos-laser {
+    height: auto;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border-top: beige 30px solid;
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .unir-fondos-laser .disenos-laser .disenos-contenedor-laser {
+      font-family: "Playwrite GB S", cursive;
+      width: 98%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 350px);
+      gap: 15px;
+      margin-bottom: 70px; }
+      .unir-fondos-laser .disenos-laser .disenos-contenedor-laser .tarj-1l {
+        grid-row: span 2; }
+      .unir-fondos-laser .disenos-laser .disenos-contenedor-laser .tarj-3l {
+        grid-column: span 2; }
+      .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div {
+        position: relative;
+        transition: 1s; }
+        .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div:hover {
+          transform: scale(1.03); }
+          .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div:hover h3 {
+            display: none; }
+        .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div h3 {
+          font-family: "Playwrite GB S", cursive;
+          color: #412700;
+          position: absolute;
+          bottom: 0px;
+          background-color: rgba(245, 245, 220, 0.8);
+          width: 100%;
+          text-align: end;
+          padding-right: 20px;
+          margin: 0px; }
 
 .telas {
   border-top: black solid 3px;
@@ -513,69 +596,78 @@ footer {
   justify-content: center;
   align-items: center; }
   .preguntas-frecuentes-contenedor-laser .acordeon-laser {
+    z-index: 1;
     margin-top: 70px;
     width: 60%; }
 
-.hero-hotfix {
-  height: 65vh;
-  background-color: #E2F1E9;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
-  .hero-hotfix iframe {
-    width: 40%; }
-  .hero-hotfix div {
-    width: 70%; }
-    .hero-hotfix div p {
-      font-family: "Playwrite GB S", cursive;
-      font-size: 20px;
-      text-align: center; }
-
-.disenos-hotfix {
-  height: auto;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
-  .disenos-hotfix .disenos-contenedor-hotfix {
-    width: 98%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 350px);
-    gap: 15px;
-    margin-bottom: 70px; }
-    .disenos-hotfix .disenos-contenedor-hotfix .tarj-1h {
-      grid-row: span 2; }
-    .disenos-hotfix .disenos-contenedor-hotfix .tarj-3h {
-      grid-column: span 2; }
-    .disenos-hotfix .disenos-contenedor-hotfix div {
-      position: relative;
-      transition: 1s; }
-      .disenos-hotfix .disenos-contenedor-hotfix div:hover {
-        transform: scale(1.03); }
-        .disenos-hotfix .disenos-contenedor-hotfix div:hover h3 {
-          display: none; }
-      .disenos-hotfix .disenos-contenedor-hotfix div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .disenos-hotfix .disenos-contenedor-hotfix div h3 {
+.unir-fondos-hotfix {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-hotfix.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center; }
+  .unir-fondos-hotfix .hero-hotfix {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .unir-fondos-hotfix .hero-hotfix iframe {
+      width: 40%; }
+    .unir-fondos-hotfix .hero-hotfix div {
+      width: 70%; }
+      .unir-fondos-hotfix .hero-hotfix div h1 p {
         font-family: "Playwrite GB S", cursive;
-        color: #412700;
-        position: absolute;
-        bottom: 0px;
-        background-color: rgba(245, 245, 220, 0.8);
-        width: 100%;
-        text-align: end;
-        margin: 0px;
-        padding-right: 20px; }
+        color: beige;
+        font-size: 20px;
+        line-height: 60px; }
+  .unir-fondos-hotfix .disenos-hotfix {
+    height: auto;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-top: beige 30px solid;
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix {
+      width: 98%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 350px);
+      gap: 15px;
+      margin-bottom: 70px; }
+      .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix .tarj-1h {
+        grid-row: span 2; }
+      .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix .tarj-3h {
+        grid-column: span 2; }
+      .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div {
+        position: relative;
+        transition: 1s; }
+        .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div:hover {
+          transform: scale(1.03); }
+          .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div:hover h3 {
+            display: none; }
+        .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div h3 {
+          font-family: "Playwrite GB S", cursive;
+          color: #412700;
+          position: absolute;
+          bottom: 0px;
+          background-color: rgba(245, 245, 220, 0.8);
+          width: 100%;
+          text-align: end;
+          margin: 0px;
+          padding-right: 20px; }
 
 .tachas {
   height: auto;
-  background-color: #E2F1E9;
+  background-color: white;
   border-top: black solid 3px;
   border-bottom: black solid 3px; }
   .tachas .tachas-contenedor {
@@ -606,12 +698,13 @@ footer {
   font-family: "Oswald", sans-serif;
   height: auto;
   padding: 50px;
-  background-color: #FEE7C8;
+  background-color: #E2F1E9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .preguntas-frecuentes-contenedor-hotfix .acordeon-hotfix {
+    z-index: 1;
     margin-top: 70px;
     width: 60%; }
 
@@ -693,6 +786,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+  .mapa-contacto-contenedor iframe {
+    z-index: 1; }
 
 @media screen and (max-width: 700px) {
   header a {
@@ -736,7 +831,9 @@ footer {
       justify-content: end;
       align-items: center; }
       header nav .menu-hamburguesa:checked + ul {
-        height: calc(100vh - 150px); }
+        height: calc(100vh - 150px);
+        transition: 2s;
+        transition-timing-function: ease-out; }
       header nav ul {
         display: flex;
         flex-direction: column;
@@ -746,7 +843,7 @@ footer {
         height: 0;
         width: 62%;
         margin: 0px;
-        background-color: beige;
+        background-color: rgba(245, 245, 220, 0.93);
         position: absolute;
         top: 150px; }
         header nav ul li a {
@@ -754,16 +851,8 @@ footer {
           font-weight: bold;
           padding: 50px; } }
 
-@media screen and (max-width: 900px) {
-  .whatsapp {
-    right: 20px; }
-    .whatsapp img {
-      height: 50px;
-      width: 50px; } }
-
 @media screen and (max-width: 1250px) {
   footer .footer-contenedor {
-    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -781,15 +870,22 @@ footer {
     footer .footer-contenedor .logos-footer div a .instagram {
       margin: 10px;
       height: 3vh;
-      width: 3vh; } }
+      width: 3vh; }
+  .footer-contacto {
+    background-image: url(../img/fondos/fondo-footer-contacto.png); } }
+
+@media screen and (max-width: 900px) {
+  .whatsapp {
+    right: 20px; }
+    .whatsapp img {
+      height: 50px;
+      width: 50px; } }
 
 @media screen and (max-width: 700px) {
-  footer .footer-contenedor {
-    height: 30vh; }
-    footer .footer-contenedor .nav-footer {
-      display: none; }
-    footer .footer-contenedor .info-footer {
-      display: none; }
+  footer .footer-contenedor .nav-footer {
+    display: none; }
+  footer .footer-contenedor .info-footer {
+    display: none; }
   footer .logos-footer .logopie {
     width: 120px;
     height: 120px; } }
@@ -797,9 +893,9 @@ footer {
 @media screen and (max-width: 1250px) {
   .hero {
     height: 60vh; }
-    .hero h1 {
+    .hero p {
       font-size: 29px; }
-    .hero a {
+    .hero h1 a {
       font-size: 20px; }
   .servicios .servicios-contenedor {
     height: 60vh;
@@ -814,12 +910,29 @@ footer {
   .sobre-nosotros .lentejuelas-index div {
     width: 90%; } }
 
+@media screen and (max-width: 850px) {
+  .sobre-nosotros .telas-index div {
+    width: 100%; }
+    .sobre-nosotros .telas-index div p {
+      width: 100%;
+      font-size: 16px; }
+  .sobre-nosotros .hilos-index div {
+    width: 100%; }
+    .sobre-nosotros .hilos-index div p {
+      width: 100%;
+      font-size: 16px; }
+  .sobre-nosotros .lentejuelas-index div {
+    width: 100%; }
+    .sobre-nosotros .lentejuelas-index div p {
+      width: 100%;
+      font-size: 16px; } }
+
 @media screen and (max-width: 700px) {
   .hero {
     height: 75vh; }
-    .hero h1 {
+    .hero p {
       font-size: 22px; }
-    .hero a {
+    .hero h1 a {
       font-size: 16px; }
   .servicios .servicios-contenedor {
     height: 40vh;
@@ -827,88 +940,81 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .sobre-nosotros .telas-index {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .sobre-nosotros .telas-index div {
-      height: auto;
-      width: 90%;
-      padding: 20px;
-      margin-top: 0px;
+  .sobre-nosotros {
+    padding: 30px; }
+    .sobre-nosotros .telas-index {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: center;
       align-items: center; }
-      .sobre-nosotros .telas-index div img {
-        width: 100px;
-        height: 100px;
-        border: solid 1px black; }
-      .sobre-nosotros .telas-index div p {
-        margin: 0px;
-        padding: 0px;
-        padding-top: 10px;
-        width: 100%;
-        font-size: 16px;
-        text-align: center; }
-  .sobre-nosotros .hilos-index {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .sobre-nosotros .hilos-index div {
-      height: auto;
-      width: 90%;
-      padding: 20px;
-      margin-top: 50px;
+      .sobre-nosotros .telas-index div {
+        height: auto;
+        padding: 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .sobre-nosotros .telas-index div img {
+          width: 100px;
+          height: 100px; }
+        .sobre-nosotros .telas-index div p {
+          margin: 0px;
+          padding: 0px;
+          padding-top: 10px;
+          font-size: 13px;
+          text-align: center; }
+    .sobre-nosotros .hilos-index {
       display: flex;
-      flex-direction: column-reverse;
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: center;
       align-items: center; }
-      .sobre-nosotros .hilos-index div img {
-        width: 100px;
-        height: 100px;
-        border: solid 1px black; }
-      .sobre-nosotros .hilos-index div p {
-        margin: 0px;
-        padding: 0px;
-        padding-top: 10px;
-        width: 100%;
-        font-size: 16px;
-        text-align: center; }
-  .sobre-nosotros .lentejuelas-index {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .sobre-nosotros .lentejuelas-index div {
-      height: auto;
-      width: 90%;
-      padding: 20px;
-      margin-top: 0px;
+      .sobre-nosotros .hilos-index div {
+        height: auto;
+        padding: 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center; }
+        .sobre-nosotros .hilos-index div img {
+          width: 100px;
+          height: 100px; }
+        .sobre-nosotros .hilos-index div p {
+          margin: 0px;
+          padding: 0px;
+          padding-top: 10px;
+          font-size: 13px;
+          text-align: center; }
+    .sobre-nosotros .lentejuelas-index {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: center;
       align-items: center; }
-      .sobre-nosotros .lentejuelas-index div img {
-        width: 100px;
-        height: 100px;
-        border: solid 1px black; }
-      .sobre-nosotros .lentejuelas-index div p {
-        margin: 0px;
-        padding: 0px;
-        padding-top: 10px;
-        width: 100%;
-        font-size: 16px;
-        text-align: center; } }
+      .sobre-nosotros .lentejuelas-index div {
+        height: auto;
+        padding: 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .sobre-nosotros .lentejuelas-index div img {
+          width: 100px;
+          height: 100px; }
+        .sobre-nosotros .lentejuelas-index div p {
+          margin: 0px;
+          padding: 0px;
+          padding-top: 10px;
+          font-size: 13px;
+          text-align: center; } }
 
 @media screen and (max-width: 500px) {
   .hero {
     height: 60vh; }
-    .hero h1 {
+    .hero p {
       font-size: 18px; }
-    .hero a {
+    .hero h1 a {
       font-size: 12px; }
   .servicios .servicios-contenedor {
     height: 30vh;
@@ -920,15 +1026,14 @@ footer {
       width: 50%; }
       .servicios .servicios-contenedor div button a {
         font-size: 10px; }
-  .sobre-nosotros .telas-index div {
-    width: 90%; }
-  .sobre-nosotros .hilos-index div {
-    width: 90%; }
-  .sobre-nosotros .lentejuelas-index div {
-    width: 90%; } }
+  .sobre-nosotros {
+    padding: 30px; } }
 
 @media screen and (max-width: 1000px) {
-  .disenos-bordado .disenos-contenedor-bordado {
+  .unir-fondos-bordado .hero-bordado div h1 p {
+    line-height: 40px;
+    font-size: 18px; }
+  .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado {
     grid-template-rows: repeat(2, 200px); }
   .personalizacion .personalizacion-contenedor div {
     display: flex;
@@ -943,25 +1048,25 @@ footer {
     width: 90%; } }
 
 @media screen and (max-width: 750px) {
-  .hero-bordado {
+  .unir-fondos-bordado .hero-bordado {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-    .hero-bordado iframe {
+    .unir-fondos-bordado .hero-bordado iframe {
       height: 40%;
       width: 70%; }
-    .hero-bordado div {
+    .unir-fondos-bordado .hero-bordado div {
       width: 90%; }
-      .hero-bordado div p {
+      .unir-fondos-bordado .hero-bordado div h1 p {
         font-size: 16px;
         text-align: center; }
-  .disenos-bordado h2 {
+  .unir-fondos-bordado .disenos-bordado h2 {
     padding: 25px;
     font-size: 30px; }
-  .disenos-bordado .disenos-contenedor-bordado {
+  .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado {
     grid-template-rows: repeat(2, 200px); }
-    .disenos-bordado .disenos-contenedor-bordado div h3 {
+    .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div h3 {
       font-size: 16px; }
   .personalizacion h2 {
     padding: 25px;
@@ -987,14 +1092,14 @@ footer {
     font-size: 30px; } }
 
 @media screen and (max-width: 600px) {
-  .hero-bordado div p {
+  .unir-fondos-bordado .hero-bordado div h1 p {
     font-size: 12px; }
-  .disenos-bordado h2 {
+  .unir-fondos-bordado .disenos-bordado h2 {
     padding: 20px;
     font-size: 24px; }
-  .disenos-bordado .disenos-contenedor-bordado {
+  .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado {
     grid-template-rows: repeat(2, 100px); }
-    .disenos-bordado .disenos-contenedor-bordado div h3 {
+    .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado div h3 {
       padding-right: 10px;
       font-size: 10px; }
   .personalizacion h2 {
@@ -1012,7 +1117,7 @@ footer {
       width: 100%; } }
 
 @media screen and (max-width: 400px) {
-  .disenos-bordado h2 {
+  .unir-fondos-bordado .disenos-bordado h2 {
     padding: 10px;
     font-size: 18px; }
   .personalizacion h2 {
@@ -1024,35 +1129,46 @@ footer {
     padding: 10px;
     font-size: 18px; } }
 
+@media screen and (max-width: 1250px) {
+  .unir-fondos-laser .hero-laser div {
+    font-size: 16px;
+    line-height: 40px; }
+    .unir-fondos-laser .hero-laser div h1 {
+      font-size: 16px; }
+  .telas .telas-contenedor img {
+    width: 200px;
+    height: 200px; } }
+
 @media screen and (max-width: 1000px) {
-  .hero-laser {
+  .unir-fondos-laser .hero-laser {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center; }
-    .hero-laser iframe {
+    .unir-fondos-laser .hero-laser iframe {
       height: 40%;
       width: 70%; }
-    .hero-laser div {
-      width: 90%; }
-      .hero-laser div p {
-        font-size: 16px;
-        text-align: center; }
-  .disenos-laser .disenos-contenedor-laser {
+    .unir-fondos-laser .hero-laser div {
+      width: 90%;
+      font-size: 16px;
+      text-align: center; }
+      .unir-fondos-laser .hero-laser div h1 {
+        font-size: 16px; }
+  .unir-fondos-laser .disenos-laser .disenos-contenedor-laser {
     grid-template-rows: repeat(2, 200px); }
   .telas .telas-contenedor img {
-    width: 200px;
-    height: 200px; }
+    width: 175px;
+    height: 175px; }
   .preguntas-frecuentes-contenedor-laser .acordeon-laser {
     width: 90%; } }
 
 @media screen and (max-width: 750px) {
-  .disenos-laser h2 {
+  .unir-fondos-laser .disenos-laser h2 {
     padding: 25px;
     font-size: 30px; }
-  .disenos-laser .disenos-contenedor-laser {
+  .unir-fondos-laser .disenos-laser .disenos-contenedor-laser {
     grid-template-rows: repeat(2, 200px); }
-    .disenos-laser .disenos-contenedor-laser div h3 {
+    .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div h3 {
       font-size: 16px; }
   .telas h2 {
     padding: 25px;
@@ -1067,14 +1183,17 @@ footer {
     font-size: 30px; } }
 
 @media screen and (max-width: 600px) {
-  .hero-laser div p {
-    font-size: 12px; }
-  .disenos-laser h2 {
+  .unir-fondos-laser .hero-laser div {
+    font-size: 12px;
+    line-height: 25px; }
+    .unir-fondos-laser .hero-laser div h1 {
+      font-size: 12px; }
+  .unir-fondos-laser .disenos-laser h2 {
     padding: 20px;
     font-size: 24px; }
-  .disenos-laser .disenos-contenedor-laser {
+  .unir-fondos-laser .disenos-laser .disenos-contenedor-laser {
     grid-template-rows: repeat(2, 100px); }
-    .disenos-laser .disenos-contenedor-laser div h3 {
+    .unir-fondos-laser .disenos-laser .disenos-contenedor-laser div h3 {
       padding-right: 10px;
       font-size: 10px; }
   .telas h2 {
@@ -1093,7 +1212,7 @@ footer {
       width: 100%; } }
 
 @media screen and (max-width: 400px) {
-  .disenos-laser h2 {
+  .unir-fondos-laser .disenos-laser h2 {
     padding: 10px;
     font-size: 18px; }
   .telas h2 {
@@ -1115,14 +1234,14 @@ footer {
     gap: 90px; } }
 
 @media screen and (max-width: 1000px) {
-  .hero-hotfix {
+  .unir-fondos-hotfix .hero-hotfix {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-    .hero-hotfix iframe {
+    .unir-fondos-hotfix .hero-hotfix iframe {
       width: 60%; }
-  .disenos-hotfix .disenos-contenedor-hotfix {
+  .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix {
     grid-template-rows: repeat(2, 200px); }
   .preguntas-frecuentes-contenedor-hotfix .acordeon-hotfix {
     width: 90%; } }
@@ -1140,25 +1259,25 @@ footer {
       height: 55px; } }
 
 @media screen and (max-width: 750px) {
-  .hero-hotfix {
+  .unir-fondos-hotfix .hero-hotfix {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-    .hero-hotfix iframe {
+    .unir-fondos-hotfix .hero-hotfix iframe {
       height: 40%;
       width: 70%; }
-    .hero-hotfix div {
+    .unir-fondos-hotfix .hero-hotfix div {
       width: 90%; }
-      .hero-hotfix div p {
+      .unir-fondos-hotfix .hero-hotfix div h1 p {
         font-size: 16px;
         text-align: center; }
-  .disenos-hotfix h2 {
+  .unir-fondos-hotfix .disenos-hotfix h2 {
     padding: 25px;
     font-size: 30px; }
-  .disenos-hotfix .disenos-contenedor-hotfix {
+  .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix {
     grid-template-rows: repeat(2, 200px); }
-    .disenos-hotfix .disenos-contenedor-hotfix div h3 {
+    .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div h3 {
       font-size: 16px; }
   .preguntas-frecuentes-contenedor-hotfix h2 {
     padding: 25px;
@@ -1178,14 +1297,15 @@ footer {
       height: 35px; } }
 
 @media screen and (max-width: 600px) {
-  .hero-hotfix div p {
-    font-size: 12px; }
-  .disenos-hotfix h2 {
+  .unir-fondos-hotfix .hero-hotfix div h1 p {
+    font-size: 12px;
+    line-height: 40px; }
+  .unir-fondos-hotfix .disenos-hotfix h2 {
     padding: 20px;
     font-size: 24px; }
-  .disenos-hotfix .disenos-contenedor-hotfix {
+  .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix {
     grid-template-rows: repeat(2, 100px); }
-    .disenos-hotfix .disenos-contenedor-hotfix div h3 {
+    .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix div h3 {
       padding-right: 10px;
       font-size: 10px; }
   .tachas .tachas-contenedor {
@@ -1210,7 +1330,7 @@ footer {
       width: 100%; } }
 
 @media screen and (max-width: 400px) {
-  .disenos-hotfix h2 {
+  .unir-fondos-hotfix .disenos-hotfix h2 {
     padding: 10px;
     font-size: 18px; }
   .tachas .tachas-contenedor {
