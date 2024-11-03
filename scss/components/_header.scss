@@ -1,5 +1,5 @@
 header {
-    background-color: white;
+    background-color: nth($colores, 3);
 
     a {
         height: 28vh;
@@ -15,6 +15,7 @@ header {
             }
         }
     }
+
     .label-hamburguesa {
         display: none;
     }

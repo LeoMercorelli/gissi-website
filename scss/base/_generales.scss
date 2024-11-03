@@ -4,17 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 
 a {
     text-decoration: none;
 }
 
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+
 .whatsapp {
+    z-index: 3;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -41,4 +53,19 @@ body {
         }
     }
 
+}
+
+
+
+.wave-footer {
+    width: 100%;
+    background: white;
+    position: relative;
+    top:0;
+
+    svg {
+        path{
+            height: auto;
+        }
+    }
 }

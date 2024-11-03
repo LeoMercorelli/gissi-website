@@ -1,77 +1,92 @@
-.hero-laser {
-    height: 65vh;
-    background-color: #F1E5E7;
-    @include flex(flex, row, space-around, center);
-
-    iframe {
-        width: 40%;
-    }
-
-    div {
-        width: 40%;
-
-        p {
-            font-family: "Playwrite GB S", cursive;
-            font-size: 20px;
-        }
-    }
-}
-
-.disenos-laser {
-    height: auto;
+.unir-fondos-laser {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/fondos/fondo-hero-laser.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    background-color: hsla(0, 0%, 0%, 0.4);
-    @include flex(flex, column, space-between, center);
 
+    .hero-laser {
+        height: 65vh;
+        @include flex(flex, row, space-around, center);
 
-    h2 {
-        @extend %titulo;
-    }
-
-    .disenos-contenedor-laser {
-        font-family: "Playwrite GB S", cursive;
-        width: 98%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 350px);
-        gap: 15px;
-        margin-bottom: 70px;
-
-        .tarj-1l {
-            grid-row: span 2;
-        }
-
-        .tarj-3l {
-            grid-column: span 2;
+        iframe {
+            width: 40%;
         }
 
         div {
-            position: relative;
-            transition: 1s;
+            width: 50%;
+            color: nth($colores, 4);
+            font-family: "Playwrite GB S", cursive;
+            font-size: 20px;
+            line-height: 60px;
 
-            &:hover {
-                transform: scale(1.03);
-                h3{
-                    display: none;
+            h1 {
+                font-size: 20px;
+            }
+
+        }
+    }
+
+    .disenos-laser {
+        height: auto;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        border-top: nth($colores, 4) 30px solid;
+        border-style: double;
+        @include flex(flex, column, space-between, center);
+
+
+        h2 {
+            @extend %titulo;
+        }
+
+        .disenos-contenedor-laser {
+            font-family: "Playwrite GB S", cursive;
+            width: 98%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 350px);
+            gap: 15px;
+            margin-bottom: 70px;
+
+            .tarj-1l {
+                grid-row: span 2;
+            }
+
+            .tarj-3l {
+                grid-column: span 2;
+            }
+
+            div {
+                position: relative;
+                transition: 1s;
+
+                &:hover {
+                    transform: scale(1.03);
+
+                    h3 {
+                        display: none;
+                    }
                 }
-            }
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
 
-            h3 {
-                font-family: "Playwrite GB S", cursive;
-                color: nth($colores, 2);
-                position: absolute;
-                bottom: 0px;
-                background-color: rgba(245, 245, 220, 0.8);
-                width: 100%;
-                text-align: end;
-                padding-right: 20px;
-                margin: 0px;
+                h3 {
+                    font-family: "Playwrite GB S", cursive;
+                    color: nth($colores, 2);
+                    position: absolute;
+                    bottom: 0px;
+                    background-color: rgba(245, 245, 220, 0.8);
+                    width: 100%;
+                    text-align: end;
+                    padding-right: 20px;
+                    margin: 0px;
+                }
             }
         }
     }
@@ -97,52 +112,55 @@
             transition: 1s;
 
         }
-        .pu{
+
+        .pu {
             animation-name: logo-wpp-flotante;
             animation-duration: 3s;
             animation-delay: 0s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
-        
+
             @keyframes logo-wpp-flotante {
                 from {
                     transform: scale(0.9);
                 }
-        
+
                 to {
                     transform: scale(1.1);
                 }
             }
         }
-        .gamuza{
+
+        .gamuza {
             animation-name: logo-wpp-flotante;
             animation-duration: 3s;
             animation-delay: 2s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
-        
+
             @keyframes logo-wpp-flotante {
                 from {
                     transform: scale(0.9);
                 }
-        
+
                 to {
                     transform: scale(1.1);
                 }
             }
         }
-        .charol{
+
+        .charol {
             animation-name: logo-wpp-flotante;
             animation-duration: 3s;
             animation-delay: 4s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
-        
+
             @keyframes logo-wpp-flotante {
                 from {
                     transform: scale(0.9);
                 }
-        
+
                 to {
                     transform: scale(1.1);
                 }
@@ -164,6 +182,8 @@
     }
 
     .acordeon-laser {
+        z-index: 1;
+
         margin-top: map-get($acordeon-pf, pf-margin-top);
         width: map-get($acordeon-pf, pf-width);
     }

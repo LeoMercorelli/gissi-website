@@ -3,12 +3,14 @@
     .hero {
         height: 60vh;
 
-        h1 {
+        p {
             font-size: 29px;
         }
 
-        a {
-            font-size: 20px;
+        h1 {
+            a {
+                font-size: 20px;
+            }
         }
     }
 
@@ -45,6 +47,50 @@
 
 
 
+@media screen and (max-width:850px) {
+
+    .sobre-nosotros {
+        .telas-index {
+
+            div {
+                width: 100%;
+
+                p {
+                    width: 100%;
+
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .hilos-index {
+
+            div {
+                width: 100%;
+
+                p {
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .lentejuelas-index {
+
+            div {
+                width: 100%;
+
+                p {
+                    width: 100%;
+
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -53,12 +99,14 @@
     .hero {
         height: 75vh;
 
-        h1 {
+        p {
             font-size: 22px;
         }
 
-        a {
-            font-size: 16px;
+        h1 {
+            a {
+                font-size: 16px;
+            }
         }
     }
 
@@ -71,12 +119,13 @@
 
 
     .sobre-nosotros {
+        padding: 30px;
+
         .telas-index {
             @include flex(flex, row, center, center);
 
             div {
                 height: auto;
-                width: 90%;
                 padding: 20px;
                 margin-top: 0px;
                 @include flex(flex, column, space-between, center);
@@ -84,15 +133,13 @@
                 img {
                     width: 100px;
                     height: 100px;
-                    border: solid 1px black;
                 }
 
                 p {
                     margin: 0px;
                     padding: 0px;
                     padding-top: 10px;
-                    width: 100%;
-                    font-size: 16px;
+                    font-size: 13px;
                     text-align: center;
                 }
             }
@@ -103,7 +150,6 @@
 
             div {
                 height: auto;
-                width: 90%;
                 padding: 20px;
                 margin-top: 50px;
                 @include flex(flex, column-reverse, space-between, center);
@@ -111,15 +157,13 @@
                 img {
                     width: 100px;
                     height: 100px;
-                    border: solid 1px black;
                 }
 
                 p {
                     margin: 0px;
                     padding: 0px;
                     padding-top: 10px;
-                    width: 100%;
-                    font-size: 16px;
+                    font-size: 13px;
                     text-align: center;
                 }
             }
@@ -130,7 +174,6 @@
 
             div {
                 height: auto;
-                width: 90%;
                 padding: 20px;
                 margin-top: 0px;
                 @include flex(flex, column, space-between, center);
@@ -138,15 +181,13 @@
                 img {
                     width: 100px;
                     height: 100px;
-                    border: solid 1px black;
                 }
 
                 p {
                     margin: 0px;
                     padding: 0px;
                     padding-top: 10px;
-                    width: 100%;
-                    font-size: 16px;
+                    font-size: 13px;
                     text-align: center;
                 }
             }
@@ -154,17 +195,24 @@
     }
 }
 
+
+
+
+
+
 @media screen and (max-width:500px) {
 
     .hero {
         height: 60vh;
 
-        h1 {
+        p {
             font-size: 18px;
         }
 
-        a {
-            font-size: 12px;
+        h1 {
+            a {
+                font-size: 12px;
+            }
         }
     }
 
@@ -187,22 +235,6 @@
     }
 
     .sobre-nosotros {
-        .telas-index {
-            div {
-                width: 90%;
-            }
-        }
-
-        .hilos-index {
-            div {
-                width: 90%;
-            }
-        }
-
-        .lentejuelas-index {
-            div {
-                width: 90%;
-            }
-        }
+        padding: 30px;
     }
 }

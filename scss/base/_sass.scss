@@ -7,8 +7,10 @@ $tema-contacto: #BFF0B0;
 
 
 
+
 //!*--  LISTAS  --//
-$colores: black, #412700, white;
+$colores: black, #412700, white, beige;
+
 
 
 
@@ -16,8 +18,9 @@ $colores: black, #412700, white;
 //!*--  MAPAS  --//
 $acordeon-pf: (
     pf-width: 60%,
-    pf-margin-top: 70px,
-);
+    pf-margin-top: 70px,)
+;
+
 
 
 
@@ -25,11 +28,29 @@ $acordeon-pf: (
 //!*--  EXTENDS  --//
 %titulo {
     font-family: "Pacifico", cursive;
-    color: #000000;
+    color: nth($colores, 4);
     padding: 30px;
     font-size: 35px;
     text-align: center;
+    text-shadow: 0px 0px 10px hsl(0, 0%, 0%);
+
 }
+
+@media screen and (max-width:1000px) {
+    %titulo {
+        padding: 20px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    %titulo {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+
+
 
 
 

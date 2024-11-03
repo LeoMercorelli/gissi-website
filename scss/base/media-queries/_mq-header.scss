@@ -21,6 +21,10 @@
     }
 }
 
+
+
+
+
 @media screen and (max-width:550px) {
     header {
         a {
@@ -49,9 +53,6 @@
 
 
 
-
-
-
 @media screen and (max-width:500px) {
     header {
         z-index: 1;
@@ -71,14 +72,19 @@
             margin-right: 30px;
             padding: 0px;
             color: #684700;
+
+
         }
 
         nav {
+
             width: 100%;
             @include flex(flex, row, end, center);
 
             .menu-hamburguesa:checked+ul {
-                height: calc(100vh - 150px)
+                height: calc(100vh - 150px);
+                transition: 2s;
+                transition-timing-function: ease-out
             }
 
             ul {
@@ -87,15 +93,20 @@
                 height: 0;
                 width: 62%;
                 margin: 0px;
-                background-color: beige;
+                background-color: rgba(245, 245, 220, 0.93);
                 position: absolute;
                 top: 150px;
 
+
+
+
                 li {
+
                     a {
                         font-size: 24px;
                         font-weight: bold;
                         padding: 50px;
+
                     }
                 }
             }
