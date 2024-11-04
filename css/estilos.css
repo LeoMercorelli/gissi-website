@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
-.servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+.servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .hero-bordado h1, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
   font-family: "Pacifico", cursive;
   color: beige;
   padding: 30px;
@@ -11,12 +11,12 @@
   text-shadow: 0px 0px 10px black; }
 
 @media screen and (max-width: 1000px) {
-  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .hero-bordado h1, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
     padding: 20px;
     font-size: 28px; } }
 
 @media screen and (max-width: 500px) {
-  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .hero-bordado h1, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
     padding: 10px;
     font-size: 25px; } }
 
@@ -365,7 +365,7 @@ footer {
       width: 40%; }
     .unir-fondos-bordado .hero-bordado div {
       width: 40%; }
-      .unir-fondos-bordado .hero-bordado div h1 p {
+      .unir-fondos-bordado .hero-bordado div p {
         font-family: "Playwrite GB S", cursive;
         color: beige;
         font-size: 20px;
@@ -1028,7 +1028,7 @@ footer {
     padding: 30px; } }
 
 @media screen and (max-width: 1000px) {
-  .unir-fondos-bordado .hero-bordado div h1 p {
+  .unir-fondos-bordado .hero-bordado div p {
     line-height: 40px;
     font-size: 18px; }
   .unir-fondos-bordado .disenos-bordado .disenos-contenedor-bordado {
@@ -1056,7 +1056,7 @@ footer {
       width: 70%; }
     .unir-fondos-bordado .hero-bordado div {
       width: 90%; }
-      .unir-fondos-bordado .hero-bordado div h1 p {
+      .unir-fondos-bordado .hero-bordado div p {
         font-size: 16px;
         text-align: center; }
   .unir-fondos-bordado .disenos-bordado h2 {
@@ -1090,7 +1090,7 @@ footer {
     font-size: 30px; } }
 
 @media screen and (max-width: 600px) {
-  .unir-fondos-bordado .hero-bordado div h1 p {
+  .unir-fondos-bordado .hero-bordado div p {
     font-size: 12px; }
   .unir-fondos-bordado .disenos-bordado h2 {
     padding: 20px;

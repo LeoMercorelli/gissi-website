@@ -11,6 +11,10 @@
 
         @include flex(flex, row, space-around, center);
 
+        h1 {
+            @extend %titulo;
+        }
+
         iframe {
             width: 40%;
         }
@@ -18,7 +22,7 @@
         div {
             width: 40%;
 
-            h1 {
+
 
                 p {
                     font-family: "Playwrite GB S", cursive;
@@ -26,7 +30,7 @@
                     font-size: 20px;
                     line-height: 60px;
                 }
-            }
+
 
         }
     }
