@@ -59,10 +59,10 @@
             @include flex(flex, row, center, center);
 
 
-            button {
+            a{
                 width: 90px;
 
-                a {
+                button {
                     font-family: "Oswald", sans-serif;
                     text-decoration: none;
                     color: nth($colores, 3);
