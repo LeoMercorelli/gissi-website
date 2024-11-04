@@ -440,7 +440,7 @@ footer {
         text-align: center;
         font-size: 15px;
         width: 80%; }
-      .personalizacion .personalizacion-contenedor div a {
+      .personalizacion .personalizacion-contenedor div button {
         font-family: "Oswald", sans-serif;
         color: white;
         text-decoration: none; }
@@ -1042,7 +1042,7 @@ footer {
     align-items: center; }
     .personalizacion .personalizacion-contenedor div img {
       transform: scale(0.7); }
-    .personalizacion .personalizacion-contenedor div a {
+    .personalizacion .personalizacion-contenedor div button {
       transform: scale(0.7); }
   .preguntas-frecuentes-contenedor-bordado .acordeon-bordado {
     width: 90%; } }
@@ -1083,7 +1083,7 @@ footer {
         transform: scale(0.4);
         position: absolute;
         bottom: 30px; }
-      .personalizacion .personalizacion-contenedor div a {
+      .personalizacion .personalizacion-contenedor div button {
         transform: scale(0.4); }
   .personalizacion .pag-next {
     display: none; }
