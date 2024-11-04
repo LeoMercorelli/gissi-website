@@ -60,13 +60,11 @@
 
 
             a{
+                font-family: "Oswald", sans-serif;
+                text-decoration: none;
+                color: nth($colores, 3);
                 width: 90px;
 
-                button {
-                    font-family: "Oswald", sans-serif;
-                    text-decoration: none;
-                    color: nth($colores, 3);
-                }
             }
         }
 

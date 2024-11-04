@@ -221,11 +221,10 @@ footer {
       justify-content: center;
       align-items: center; }
       .servicios .servicios-contenedor div a {
+        font-family: "Oswald", sans-serif;
+        text-decoration: none;
+        color: white;
         width: 90px; }
-        .servicios .servicios-contenedor div a button {
-          font-family: "Oswald", sans-serif;
-          text-decoration: none;
-          color: white; }
     .servicios .servicios-contenedor .bordados-tarjeta {
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/tarjetas/servicios/icono-bordado.jpg);
       background-repeat: no-repeat;
@@ -440,7 +439,7 @@ footer {
         text-align: center;
         font-size: 15px;
         width: 80%; }
-      .personalizacion .personalizacion-contenedor div button {
+      .personalizacion .personalizacion-contenedor div a {
         font-family: "Oswald", sans-serif;
         color: white;
         text-decoration: none; }
@@ -1023,9 +1022,8 @@ footer {
     justify-content: center;
     align-items: center; }
     .servicios .servicios-contenedor div a {
-      width: 50%; }
-      .servicios .servicios-contenedor div a button {
-        font-size: 10px; }
+      width: 50%;
+      font-size: 10px; }
   .sobre-nosotros {
     padding: 30px; } }
 
@@ -1042,7 +1040,7 @@ footer {
     align-items: center; }
     .personalizacion .personalizacion-contenedor div img {
       transform: scale(0.7); }
-    .personalizacion .personalizacion-contenedor div button {
+    .personalizacion .personalizacion-contenedor div a {
       transform: scale(0.7); }
   .preguntas-frecuentes-contenedor-bordado .acordeon-bordado {
     width: 90%; } }
@@ -1083,7 +1081,7 @@ footer {
         transform: scale(0.4);
         position: absolute;
         bottom: 30px; }
-      .personalizacion .personalizacion-contenedor div button {
+      .personalizacion .personalizacion-contenedor div a {
         transform: scale(0.4); }
   .personalizacion .pag-next {
     display: none; }
