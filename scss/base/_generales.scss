@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -61,10 +61,10 @@ body {
     width: 100%;
     background: white;
     position: relative;
-    top:0;
+    top: 0;
 
     svg {
-        path{
+        path {
             height: auto;
         }
     }
