@@ -26,17 +26,37 @@ $acordeon-pf: (
 
 
 //!*--  EXTENDS  --//
+%titulo-principal {
+    font-family: "Pacifico", cursive;
+    color: nth($colores, 2);
+    padding: 80px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 2px 5px beige,
+    0px -1px 5px beige,
+    1px 0px 5px beige,
+    -1px 0px 5px beige;
+}
+
+
+
 %titulo {
     font-family: "Pacifico", cursive;
     color: nth($colores, 4);
     padding: 30px;
     font-size: 35px;
     text-align: center;
-    text-shadow: 0px 0px 10px hsl(0, 0%, 0%);
-
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1),
+    0px -1px 0px rgba(0, 0, 0, 1),
+    1px 0px 25px rgba(0, 0, 0, 1),
+    -1px 0px 0px rgba(0, 0, 0, 1);
 }
 
 @media screen and (max-width:1000px) {
+    %titulo-principal {
+        padding: 60px;
+        font-size: 21px;
+    }
     %titulo {
         padding: 20px;
         font-size: 28px;
@@ -44,10 +64,16 @@ $acordeon-pf: (
 }
 
 @media screen and (max-width:500px) {
+    %titulo-principal {
+        padding: 40px;
+        font-size: 16px;
+        line-height: 30px;
+    }
     %titulo {
         padding: 10px;
         font-size: 25px;
     }
+
 }
 
 

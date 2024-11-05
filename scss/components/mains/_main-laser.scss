@@ -7,24 +7,26 @@
     text-align: center;
 
     .hero-laser {
-        height: 65vh;
-        @include flex(flex, row, space-around, center);
+        height: 70vh;
 
-        iframe {
-            width: 40%;
+        h1 {
+            @extend %titulo-principal;
         }
 
         div {
-            width: 50%;
-            color: nth($colores, 4);
-            font-family: "Playwrite GB S", cursive;
-            font-size: 20px;
-            line-height: 60px;
+            @include flex(flex, row, space-around, center);
 
-            h1 {
-                font-size: 20px;
+            iframe {
+                width: 40%;
             }
 
+            p {
+                width: 40%;
+                color: nth($colores, 4);
+                font-family: "Playwrite GB S", cursive;
+                font-size: 20px;
+                line-height: 60px;
+            }
         }
     }
 

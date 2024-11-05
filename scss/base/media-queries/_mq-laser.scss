@@ -2,12 +2,9 @@
     .unir-fondos-laser {
         .hero-laser {
             div {
-                font-size: 16px;
-                line-height: 40px;
-
-                h1 {
+                p {
                     font-size: 16px;
-
+                    line-height: 40px;
                 }
             }
         }
@@ -31,21 +28,19 @@
 @media screen and (max-width:1000px) {
     .unir-fondos-laser {
         .hero-laser {
-            @include flex(flex, column-reverse, space-evenly, center);
-
-            iframe {
-                height: 40%;
-                width: 70%;
-            }
-
             div {
-                width: 90%;
-                font-size: 16px;
-                text-align: center;
+                @include flex(flex, column-reverse, space-evenly, center);
 
-                h1 {
+                iframe {
+                    height: 40%;
+                    width: 70%;
+                }
+
+                p {
+                    margin-top: 50px;
+                    width: 90%;
                     font-size: 16px;
-
+                    text-align: center;
                 }
             }
         }
@@ -130,18 +125,6 @@
 
 @media screen and (max-width:600px) {
     .unir-fondos-laser {
-
-        .hero-laser {
-
-            div {
-                font-size: 12px;
-                line-height: 25px;
-
-                h1 {
-                    font-size: 12px;
-                }
-            }
-        }
 
 
         .disenos-laser {

@@ -2,21 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
-.servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .hero-bordado h1, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+.unir-fondos-bordado .hero-bordado h1, .unir-fondos-laser .hero-laser h1, .unir-fondos-hotfix .hero-hotfix h1 {
+  font-family: "Pacifico", cursive;
+  color: #412700;
+  padding: 80px;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 2px 5px beige, 0px -1px 5px beige, 1px 0px 5px beige, -1px 0px 5px beige; }
+
+.servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
   font-family: "Pacifico", cursive;
   color: beige;
   padding: 30px;
   font-size: 35px;
   text-align: center;
-  text-shadow: 0px 0px 10px black; }
+  text-shadow: 0px 2px 0px black, 0px -1px 0px black, 1px 0px 25px black, -1px 0px 0px black; }
 
 @media screen and (max-width: 1000px) {
-  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .hero-bordado h1, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+  .unir-fondos-bordado .hero-bordado h1, .unir-fondos-laser .hero-laser h1, .unir-fondos-hotfix .hero-hotfix h1 {
+    padding: 60px;
+    font-size: 21px; }
+  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
     padding: 20px;
     font-size: 28px; } }
 
 @media screen and (max-width: 500px) {
-  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .hero-bordado h1, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
+  .unir-fondos-bordado .hero-bordado h1, .unir-fondos-laser .hero-laser h1, .unir-fondos-hotfix .hero-hotfix h1 {
+    padding: 40px;
+    font-size: 16px;
+    line-height: 30px; }
+  .servicios h2, .sobre-nosotros h2, .unir-fondos-bordado .disenos-bordado h2, .personalizacion h2, .preguntas-frecuentes-contenedor-bordado h2, .unir-fondos-laser .disenos-laser h2, .telas h2, .preguntas-frecuentes-contenedor-laser h2, .unir-fondos-hotfix .disenos-hotfix h2, .tachas h2, .preguntas-frecuentes-contenedor-hotfix h2, .hero-contacto h1 {
     padding: 10px;
     font-size: 25px; } }
 
@@ -356,16 +371,16 @@ footer {
   background-attachment: fixed;
   text-align: center; }
   .unir-fondos-bordado .hero-bordado {
-    height: 65vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-    .unir-fondos-bordado .hero-bordado iframe {
-      width: 40%; }
+    height: 70vh; }
     .unir-fondos-bordado .hero-bordado div {
-      width: 40%; }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .unir-fondos-bordado .hero-bordado div iframe {
+        width: 40%; }
       .unir-fondos-bordado .hero-bordado div p {
+        width: 40%;
         font-family: "Playwrite GB S", cursive;
         color: beige;
         font-size: 20px;
@@ -475,21 +490,20 @@ footer {
   background-attachment: fixed;
   text-align: center; }
   .unir-fondos-laser .hero-laser {
-    height: 65vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-    .unir-fondos-laser .hero-laser iframe {
-      width: 40%; }
+    height: 70vh; }
     .unir-fondos-laser .hero-laser div {
-      width: 50%;
-      color: beige;
-      font-family: "Playwrite GB S", cursive;
-      font-size: 20px;
-      line-height: 60px; }
-      .unir-fondos-laser .hero-laser div h1 {
-        font-size: 20px; }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .unir-fondos-laser .hero-laser div iframe {
+        width: 40%; }
+      .unir-fondos-laser .hero-laser div p {
+        width: 40%;
+        color: beige;
+        font-family: "Playwrite GB S", cursive;
+        font-size: 20px;
+        line-height: 60px; }
   .unir-fondos-laser .disenos-laser {
     height: auto;
     text-align: center;
@@ -607,16 +621,18 @@ footer {
   background-attachment: fixed;
   text-align: center; }
   .unir-fondos-hotfix .hero-hotfix {
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-    .unir-fondos-hotfix .hero-hotfix iframe {
-      width: 40%; }
+    height: 70vh; }
     .unir-fondos-hotfix .hero-hotfix div {
-      width: 70%; }
-      .unir-fondos-hotfix .hero-hotfix div h1 p {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .unir-fondos-hotfix .hero-hotfix div iframe {
+        width: 40%;
+        height: 20vh; }
+      .unir-fondos-hotfix .hero-hotfix div p {
+        margin-top: 50px;
+        width: 70%;
         font-family: "Playwrite GB S", cursive;
         color: beige;
         font-size: 20px;
@@ -1046,19 +1062,19 @@ footer {
     width: 90%; } }
 
 @media screen and (max-width: 750px) {
-  .unir-fondos-bordado .hero-bordado {
+  .unir-fondos-bordado .hero-bordado div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-    .unir-fondos-bordado .hero-bordado iframe {
+    .unir-fondos-bordado .hero-bordado div iframe {
       height: 40%;
       width: 70%; }
-    .unir-fondos-bordado .hero-bordado div {
-      width: 90%; }
-      .unir-fondos-bordado .hero-bordado div p {
-        font-size: 16px;
-        text-align: center; }
+    .unir-fondos-bordado .hero-bordado div p {
+      margin-top: 50px;
+      width: 90%;
+      font-size: 16px;
+      text-align: center; }
   .unir-fondos-bordado .disenos-bordado h2 {
     padding: 25px;
     font-size: 30px; }
@@ -1128,30 +1144,27 @@ footer {
     font-size: 18px; } }
 
 @media screen and (max-width: 1250px) {
-  .unir-fondos-laser .hero-laser div {
+  .unir-fondos-laser .hero-laser div p {
     font-size: 16px;
     line-height: 40px; }
-    .unir-fondos-laser .hero-laser div h1 {
-      font-size: 16px; }
   .telas .telas-contenedor img {
     width: 200px;
     height: 200px; } }
 
 @media screen and (max-width: 1000px) {
-  .unir-fondos-laser .hero-laser {
+  .unir-fondos-laser .hero-laser div {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center; }
-    .unir-fondos-laser .hero-laser iframe {
+    .unir-fondos-laser .hero-laser div iframe {
       height: 40%;
       width: 70%; }
-    .unir-fondos-laser .hero-laser div {
+    .unir-fondos-laser .hero-laser div p {
+      margin-top: 50px;
       width: 90%;
       font-size: 16px;
       text-align: center; }
-      .unir-fondos-laser .hero-laser div h1 {
-        font-size: 16px; }
   .unir-fondos-laser .disenos-laser .disenos-contenedor-laser {
     grid-template-rows: repeat(2, 200px); }
   .telas .telas-contenedor img {
@@ -1181,11 +1194,6 @@ footer {
     font-size: 30px; } }
 
 @media screen and (max-width: 600px) {
-  .unir-fondos-laser .hero-laser div {
-    font-size: 12px;
-    line-height: 25px; }
-    .unir-fondos-laser .hero-laser div h1 {
-      font-size: 12px; }
   .unir-fondos-laser .disenos-laser h2 {
     padding: 20px;
     font-size: 24px; }
@@ -1232,12 +1240,12 @@ footer {
     gap: 90px; } }
 
 @media screen and (max-width: 1000px) {
-  .unir-fondos-hotfix .hero-hotfix {
+  .unir-fondos-hotfix .hero-hotfix div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-    .unir-fondos-hotfix .hero-hotfix iframe {
+    .unir-fondos-hotfix .hero-hotfix div iframe {
       width: 60%; }
   .unir-fondos-hotfix .disenos-hotfix .disenos-contenedor-hotfix {
     grid-template-rows: repeat(2, 200px); }
@@ -1257,19 +1265,13 @@ footer {
       height: 55px; } }
 
 @media screen and (max-width: 750px) {
-  .unir-fondos-hotfix .hero-hotfix {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-    .unir-fondos-hotfix .hero-hotfix iframe {
-      height: 40%;
-      width: 70%; }
-    .unir-fondos-hotfix .hero-hotfix div {
-      width: 90%; }
-      .unir-fondos-hotfix .hero-hotfix div h1 p {
-        font-size: 16px;
-        text-align: center; }
+  .unir-fondos-hotfix .hero-hotfix div iframe {
+    height: 40%;
+    width: 70%; }
+  .unir-fondos-hotfix .hero-hotfix div p {
+    width: 90%;
+    font-size: 16px;
+    text-align: center; }
   .unir-fondos-hotfix .disenos-hotfix h2 {
     padding: 25px;
     font-size: 30px; }
@@ -1295,9 +1297,9 @@ footer {
       height: 35px; } }
 
 @media screen and (max-width: 600px) {
-  .unir-fondos-hotfix .hero-hotfix div h1 p {
+  .unir-fondos-hotfix .hero-hotfix div p {
     font-size: 12px;
-    line-height: 40px; }
+    line-height: 50px; }
   .unir-fondos-hotfix .disenos-hotfix h2 {
     padding: 20px;
     font-size: 24px; }

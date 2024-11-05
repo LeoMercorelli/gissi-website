@@ -7,29 +7,27 @@
     text-align: center;
 
     .hero-bordado {
-        height: 65vh;
+        height: 70vh;
 
-        @include flex(flex, row, space-around, center);
 
         h1 {
-            @extend %titulo;
-        }
-
-        iframe {
-            width: 40%;
+            @extend %titulo-principal;
         }
 
         div {
-            width: 40%;
+            @include flex(flex, row, space-around, center);
 
+            iframe {
+                width: 40%;
+            }
 
-
-                p {
-                    font-family: "Playwrite GB S", cursive;
-                    color: nth($colores, 4);
-                    font-size: 20px;
-                    line-height: 60px;
-                }
+            p {
+                width: 40%;
+                font-family: "Playwrite GB S", cursive;
+                color: nth($colores, 4);
+                font-size: 20px;
+                line-height: 60px;
+            }
 
 
         }

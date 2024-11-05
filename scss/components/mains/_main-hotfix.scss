@@ -7,89 +7,94 @@
     text-align: center;
 
     .hero-hotfix {
-        height: 65vh;
-        @include flex(flex, column, space-evenly, center);
+        height: 70vh;
 
-        iframe {
-            width: 40%;
+        h1 {
+            @extend %titulo-principal;
         }
 
         div {
-            width: 70%;
+            @include flex(flex, column, space-evenly, center);
 
-            h1 {
-
-                p {
-                    font-family: "Playwrite GB S", cursive;
-                    color: nth($colores, 4);
-                    font-size: 20px;
-                    line-height: 60px
-                }
+            iframe {
+                width: 40%;
+                height: 20vh;
             }
+
+            p {
+                margin-top: 50px;
+                width: 70%;
+                font-family: "Playwrite GB S", cursive;
+                color: nth($colores, 4);
+                font-size: 20px;
+                line-height: 60px
+            }
+        
         }
     }
 
 
-    .disenos-hotfix {
-        height: auto;
-        text-align: center;
-        backdrop-filter: blur(5px);
-        border-top: nth($colores, 4) 30px solid;
-        border-style: double;
-        @include flex(flex, column, space-between, center);
 
-        h2 {
-            @extend %titulo;
+.disenos-hotfix {
+    height: auto;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-top: nth($colores, 4) 30px solid;
+    border-style: double;
+    @include flex(flex, column, space-between, center);
+
+    h2 {
+        @extend %titulo;
+    }
+
+    .disenos-contenedor-hotfix {
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        gap: 15px;
+        margin-bottom: 70px;
+
+        .tarj-1h {
+            grid-row: span 2;
         }
 
-        .disenos-contenedor-hotfix {
-            width: 98%;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 350px);
-            gap: 15px;
-            margin-bottom: 70px;
+        .tarj-3h {
+            grid-column: span 2;
+        }
 
-            .tarj-1h {
-                grid-row: span 2;
-            }
+        div {
+            position: relative;
+            transition: 1s;
 
-            .tarj-3h {
-                grid-column: span 2;
-            }
-
-            div {
-                position: relative;
-                transition: 1s;
-
-                &:hover {
-                    transform: scale(1.03);
-
-                    h3 {
-                        display: none;
-                    }
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            &:hover {
+                transform: scale(1.03);
 
                 h3 {
-                    font-family: "Playwrite GB S", cursive;
-                    color: nth($colores, 2);
-                    position: absolute;
-                    bottom: 0px;
-                    background-color: rgba(245, 245, 220, 0.8);
-                    width: 100%;
-                    text-align: end;
-                    margin: 0px;
-                    padding-right: 20px;
+                    display: none;
                 }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            h3 {
+                font-family: "Playwrite GB S", cursive;
+                color: nth($colores, 2);
+                position: absolute;
+                bottom: 0px;
+                background-color: rgba(245, 245, 220, 0.8);
+                width: 100%;
+                text-align: end;
+                margin: 0px;
+                padding-right: 20px;
             }
         }
     }
+}
 }
 
 .tachas {
